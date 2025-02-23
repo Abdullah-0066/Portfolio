@@ -7,9 +7,9 @@ import { motion } from "framer-motion"
 
 
 const iconVarients = (duration) => ({
-    initial: { y: -10},
+    initial: { y: -20},
     animate: {
-        y: [2, -2],
+        y: [5, -5],
         transition: {
             duration: duration,
             ease: "linear",
@@ -25,13 +25,13 @@ const Technologies = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{opacity: 0, y: -100 }}
             transition={{duration: 1.5}}
-            className="my-20 text-center text-4xl">Technologies</motion.h2>
+            className="my-40 text-center text-4xl">Technologies</motion.h2>
 
         <motion.div
             whileInView={{opacity: 1, x: 0}}
             initial={{opacity: 0, y: -100 }}
             transition={{duration: 1.5}}
-            className="flex flex-wrap items-center justify-center gap-4">
+            className="flex flex-wrap items-center justify-center gap-10">
                 <motion.div 
                 initial="initial"
                 animate="animate"
